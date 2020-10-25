@@ -51,8 +51,13 @@
     <main class="container">
       <div id="app">
         <h1>Interactive CSS</h1>
-
-        <section class="headers">
+       <button v-on:click="page = 'margin'">margin</button>
+       <button v-on:click="page = 'typography'">typography</button>
+       <button v-on:click="page = 'padding'">padding</button>
+        <section v-if="page == 'typography'" class="typography">
+          <h2>Font</h2> 
+          <h3>weight</h3>
+           <p>We can set...</p>
           <h2>Headers</h2>
           <h1>H1 Example</h1>
           <h2>H2 Example</h2>
@@ -60,7 +65,7 @@
           <h4>H3 Example</h4>
         </section>
 
-        <section class="margin">
+        <section v-else-if="page == 'margin'" class="margin">
           <h2>Margin</h2>
           <p>Margin is a ....</p>
           <label for="margintop">Margin Top {{margin.top}}</label>
@@ -86,6 +91,34 @@
             <div v-for="i in 5" class="child" :style="marginStyle"></div>
           </div>
         </section>
+
+
+        <section v-else-if="page == 'padding'" class="padding">
+          <h2>Margin</h2>
+          <p>Margin is a ....</p>
+          <label for="paddingtop">padding Top {{padding.top}}</label>
+          <input
+            type="range"
+            id="padding-top"
+            name="paddingtop"
+            min="0"
+            max="20"
+            v-model="padding.top"
+          />
+          <label for="paddingleft">padding Left {{padding.left}}</label>
+          <input
+            type="range"
+            id="padding-left"
+            name="paddingleft"
+            min="0"
+            max="20"
+            v-model="padding.left"
+          />
+
+          <div class="parent" :style="paddingStyle">
+            <div v-for="i in 5" class="child"></div>
+          </div>
+        </section>
       </div>
     </main>
   </body>
@@ -94,6 +127,7 @@
     var vm = new Vue({
       el: "#app",
       data: {
+        page:"margin",
         padding: {
           top: 0,
           right: 0,
@@ -114,6 +148,14 @@
             "margin-right": this.margin.right + "px",
             "margin-bottom": this.margin.bottom + "px",
             "margin-left": this.margin.left + "px"
+          };
+        },
+        paddingStyle() {
+          return {
+            "padding-top": this.padding.top + "px",
+            "padding-right": this.padding.right + "px",
+            "padding-bottom": this.padding.bottom + "px",
+            "padding-left": this.padding.left + "px"
           };
         }
       }
