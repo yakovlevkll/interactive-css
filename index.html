@@ -51,18 +51,24 @@
     <main class="container">
       <div id="app">
         <h1>Interactive CSS</h1>
-       <button v-on:click="page = 'margin'">margin</button>
-       <button v-on:click="page = 'typography'">typography</button>
-       <button v-on:click="page = 'padding'">padding</button>
-        <section v-if="page == 'typography'" class="typography">
-          <h2>Font</h2> 
-          <h3>weight</h3>
-           <p>We can set...</p>
-          <h2>Headers</h2>
-          <h1>H1 Example</h1>
-          <h2>H2 Example</h2>
-          <h3>H3 Example</h3>
-          <h4>H3 Example</h4>
+       <button v-for="el in pages" v-on:click="page = el">{{ el }}</button>
+       
+       <section v-if="page == 'background'" class="background">
+        <h2>background colors , background size</h2>
+      </section>
+
+      <section v-else-if="page == 'borders'" class="borders">
+        <h2>borders</h2>
+      </section>
+
+       <section v-else-if="page == 'colors'" class="colors">
+         <h2>Hex colors, RGB color wheel</h2>
+       </section>
+       
+    
+        
+         <section v-else-if="page == 'images'" class="images">
+          <h2>images</h2>
         </section>
 
         <section v-else-if="page == 'margin'" class="margin">
@@ -92,9 +98,12 @@
           </div>
         </section>
 
+        <section v-else-if="page == 'media query'" class="media query">
+          <h2>media query</h2>
+        </section>
 
         <section v-else-if="page == 'padding'" class="padding">
-          <h2>Margin</h2>
+          <h2>padding</h2>
           <p>Margin is a ....</p>
           <label for="paddingtop">padding Top {{padding.top}}</label>
           <input
@@ -119,6 +128,40 @@
             <div v-for="i in 5" class="child"></div>
           </div>
         </section>
+
+        <section v-else-if="page == 'position'" class="position">
+          <h2>position</h2>
+        </section>
+
+        <section v-else-if="page == 'selectors'" class="selectors">
+          <h2>selectors</h2>
+        </section>
+
+
+        <section v-else-if="page == 'shadow'" class="shadow">
+          <h2>shadow</h2>
+        </section>
+
+        <section v-else-if="page == 'typography'" class="typography">
+          <h2>Font</h2> 
+          <h3>weight</h3>
+           <p>We can set...</p>
+           <h2>import google fonts</h2>
+          <h2>Headers</h2>
+          <h1>H1 Example</h1>
+          <h2>H2 Example</h2>
+          <h3>H3 Example</h3>
+          <h4>H3 Example</h4>
+        </section>
+
+
+
+       
+
+        <section v-else-if="page == 'variables'" class="variables">
+          <h2>variables</h2>
+        </section>
+
       </div>
     </main>
   </body>
@@ -128,6 +171,21 @@
       el: "#app",
       data: {
         page:"margin",
+        pages:[
+            "background",
+            "borders",
+            "colors",
+            "images",
+           "margin",
+            "media query",
+            "position",
+            "padding",
+          "shadow",
+            "selectors",
+            "typography",
+            "variables",
+            ],
+
         padding: {
           top: 0,
           right: 0,
