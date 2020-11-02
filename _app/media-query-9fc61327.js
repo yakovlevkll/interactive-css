@@ -1,0 +1,2 @@
+import{S as s,i as a,s as e,e as r,t,c,b as i,d as n,f as o,j as u,k as l,n as d}from"./client-e0748087.js";function f(s){let a,e;return{c(){a=r("h1"),e=t("Media query")},l(s){a=c(s,"H1",{});var r=i(a);e=n(r,"Media query"),r.forEach(o)},m(s,r){u(s,a,r),l(a,e)},p:d,i:d,o:d,d(s){s&&o(a)}}}export default class extends s{constructor(s){super(),a(this,s,null,f,e,{})}}
+//# sourceMappingURL=media-query-9fc61327.js.map

@@ -1,0 +1,2 @@
+import{S as s,i as a,s as t,e as o,t as e,c as i,b as n,d as r,f as c,j as l,k as u,n as f}from"./client-e0748087.js";function d(s){let a,t;return{c(){a=o("h1"),t=e("Position")},l(s){a=i(s,"H1",{});var o=n(a);t=r(o,"Position"),o.forEach(c)},m(s,o){l(s,a,o),u(a,t)},p:f,i:f,o:f,d(s){s&&c(a)}}}export default class extends s{constructor(s){super(),a(this,s,null,d,t,{})}}
+//# sourceMappingURL=position-d0518ed6.js.map

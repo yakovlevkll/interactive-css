@@ -1,0 +1,3 @@
+html{padding:0;margin:0;background:#333}body{padding:0;margin:0;display:flex;flex-wrap:wrap}.content{padding:1rem 3rem;margin:1rem 3rem;background-color:#dadada;flex-grow:1}/*# sourceMappingURL=$layout.css.map */
+.site-header{flex-basis:100%}.site-header nav{height:10vh;padding:0.25rem 1.6rem;background:#232323;box-shadow:0 0 5px rgba(0, 0, 0, 0.3);display:flex;align-items:center;gap:1rem}.site-header a{color:#eaeaea;text-decoration:none}.site-logo{font-size:1.5rem}.site-sidebar{display:flex;flex-direction:column;padding:1rem 2rem 1rem 1rem;gap:0.5em;background-color:#2a2a2a}.site-sidebar a{color:#dadada;text-decoration:none}/*# sourceMappingURL=Nav.css.map */
+/*# sourceMappingURL=client-4eec5c23.css.map */

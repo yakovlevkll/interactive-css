@@ -1,0 +1,2 @@
+import{S as s,i as a,s as e,e as t,t as r,c,b as n,d as o,f as l,j as i,k as u,n as f}from"./client-e0748087.js";function m(s){let a,e;return{c(){a=t("h1"),e=r("Image")},l(s){a=c(s,"H1",{});var t=n(a);e=o(t,"Image"),t.forEach(l)},m(s,t){i(s,a,t),u(a,e)},p:f,i:f,o:f,d(s){s&&l(a)}}}export default class extends s{constructor(s){super(),a(this,s,null,m,e,{})}}
+//# sourceMappingURL=image-839fbe1a.js.map

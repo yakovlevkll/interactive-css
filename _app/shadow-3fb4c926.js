@@ -1,0 +1,2 @@
+import{S as s,i as a,s as t,e,t as o,c as r,b as c,d as n,f as l,j as d,k as i,n as u}from"./client-e0748087.js";function f(s){let a,t;return{c(){a=e("h1"),t=o("Shadow")},l(s){a=r(s,"H1",{});var e=c(a);t=n(e,"Shadow"),e.forEach(l)},m(s,e){d(s,a,e),i(a,t)},p:u,i:u,o:u,d(s){s&&l(a)}}}export default class extends s{constructor(s){super(),a(this,s,null,f,t,{})}}
+//# sourceMappingURL=shadow-3fb4c926.js.map

@@ -1,0 +1,2 @@
+import{S as s,i as a,s as e,e as t,t as r,c,b as o,d as l,f as n,j as i,k as u,n as f}from"./client-e0748087.js";function d(s){let a,e;return{c(){a=t("h1"),e=r("Selectors")},l(s){a=c(s,"H1",{});var t=o(a);e=l(t,"Selectors"),t.forEach(n)},m(s,t){i(s,a,t),u(a,e)},p:f,i:f,o:f,d(s){s&&n(a)}}}export default class extends s{constructor(s){super(),a(this,s,null,d,e,{})}}
+//# sourceMappingURL=selectors-a45656f3.js.map
